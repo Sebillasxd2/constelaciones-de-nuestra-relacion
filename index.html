@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111b29">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; font-src 'self' blob:; connect-src 'self' blob:; worker-src 'self' blob:; manifest-src 'self'; media-src 'self' blob:; form-action 'none'; object-src 'none'">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icono.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icono-180.png">
+  <title>Nuestro cielo</title>
+  <script type="module" crossorigin src="./assets/index-CkMibq46.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-QLbVETtQ.css">
+</head>
+<body>
+  <main id="aplicacion">
+    <section id="candado" aria-labelledby="titulo">
+      <div id="lamina" aria-hidden="true"><canvas id="grabado"></canvas></div>
+      <div class="entrada">
+        <svg class="floron" viewBox="0 0 92 20" aria-hidden="true"><path d="M0 10h31m30 0h31M46 1l2.2 6.8L55 10l-6.8 2.2L46 19l-2.2-6.8L37 10l6.8-2.2Z"/></svg>
+        <h1 id="titulo">Nuestro cielo</h1>
+        <form id="abrir" autocomplete="off">
+          <label for="frase">Escribe nuestra frase</label>
+          <div class="campo">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5.5" y="10.5" width="13" height="10" rx="2"/><path d="M8.5 10V7a3.5 3.5 0 0 1 7 0v3M12 14v3"/></svg>
+            <input id="frase" name="frase" type="password" required autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" placeholder="Nuestra frase" aria-describedby="pista error">
+          </div>
+          <p id="pista" hidden></p>
+          <p id="error" role="alert"></p>
+          <label class="recordar"><input id="recordar" type="checkbox" checked>Recordar en este celular</label>
+          <button id="encender" class="dorado" type="submit">Encender el cielo<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.2 8.8L23 12l-8.8 2.2L12 23l-2.2-8.8L1 12l8.8-2.2Z"/></svg></button>
+        </form>
+      </div>
+    </section>
+    <section id="experiencia" data-testid="experiencia" hidden aria-label="El cielo"></section>
+    <aside id="avisos" aria-label="Disponibilidad e instalación" hidden>
+      <div id="copia" role="status" data-testid="copia"></div>
+      <div id="instalar" hidden><p></p><button type="button" aria-label="Cerrar instrucciones de instalación">Entendido</button></div>
+      <a id="actualizacion" href="#/nuevas" hidden>Hay estrellas nuevas ✦</a>
+    </aside>
+  </main>
+  <noscript>Activa JavaScript para encender el cielo.</noscript>
+</body>
+</html>
